@@ -1,6 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
+	cooldown: 5,
 	data: new SlashCommandBuilder()
 		.setName('prune')
 		.setDescription('Prune up to 99 messages.')
