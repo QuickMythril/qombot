@@ -6,6 +6,7 @@ module.exports = {
 		.setName('prune')
 		.setDescription('Prune up to 99 messages.')
 		.addIntegerOption(option => option.setName('amount').setDescription('Number of messages to prune')),
+	category: 'moderation',
 	async execute(interaction) {
 		const amount = interaction.options.getInteger('amount');
 
