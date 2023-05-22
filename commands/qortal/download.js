@@ -1,5 +1,4 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { request } = require('undici');
 
 module.exports = {
 	cooldown: 5,
@@ -15,9 +14,10 @@ module.exports = {
           { name: 'Linux', value: 'https://github.com/Qortal/qortal-ui/releases/latest/download/Qortal-Setup-amd64.AppImage' },
           { name: 'Mac', value: 'https://github.com/Qortal/qortal-ui/releases/latest/download/Qortal-Setup-macOS.dmg' },
           { name: 'Windows', value: 'https://github.com/Qortal/qortal-ui/releases/latest/download/Qortal-Setup-win64.exe' },
-          { name: 'Qortal Core', value: 'https://github.com/qortal/qortal/releases/latest' },
-          { name: 'Qortal UI', value: 'https://github.com/qortal/qortal-ui/releases/latest' },
-          { name: 'Apt Repo', value: '<https://github.com/Qortal/qortal-ui/blob/master/scripts/add-debian-apt-repo.sh#L22>' },
+          { name: 'Core', value: 'https://github.com/qortal/qortal/releases/latest' },
+          { name: 'UI', value: 'https://github.com/qortal/qortal-ui/releases/latest' },
+          { name: 'Jar', value: 'https://github.com/Qortal/qortal/releases/latest/download/qortal.jar' },
+          { name: 'Apt', value: '<https://github.com/Qortal/qortal-ui/blob/master/scripts/add-debian-apt-repo.sh#L22>' },
         )),
 	category: 'qortal',
 	async execute(interaction) {

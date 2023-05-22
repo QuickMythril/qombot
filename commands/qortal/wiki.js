@@ -1,5 +1,4 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { request } = require('undici');
 
 module.exports = {
 	cooldown: 5,
